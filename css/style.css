@@ -1,0 +1,179 @@
+body,
+html {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none !important; }
+
+ul,
+li {
+  list-style: none; }
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.title {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: calc(16px + 6 * ((100vw - 20px) / 380));
+  color: #fff; }
+
+.container {
+  max-width: 1400px !important; }
+
+#sec1,
+#sec2,
+#sec3 {
+  background-color: #1e3745; }
+
+.page1 {
+  background-color: #1e3745; }
+  .page1 .intro-text {
+    height: 20vh;
+    margin: auto;
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: calc(16px + 6 * ((100vw - 20px) / 380));
+    color: #fff; }
+    .page1 .intro-text ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .page1 .intro-text ul li {
+        list-style: none;
+        margin: 0 15px; }
+        .page1 .intro-text ul li a {
+          position: relative;
+          display: block;
+          width: 55px;
+          height: 55px;
+          text-align: center;
+          line-height: 57px;
+          background: #284251;
+          border-radius: 50%;
+          font-size: 21px;
+          color: #ffffff9e;
+          transition: .5s; }
+    .page1 .intro-text ul li a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #6e7884a4;
+      transition: .5s;
+      transform: scale(0.9);
+      z-index: -1; }
+    .page1 .intro-text ul li a:hover::before {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ffffff5c; }
+    .page1 .intro-text ul li a:hover {
+      color: #ffffff;
+      box-shadow: 0 0 5px #4c6d7f;
+      text-shadow: 0 0 5px #4c575e; }
+    .page1 .intro-text .img-profile {
+      text-align: center; }
+      .page1 .intro-text .img-profile img {
+        width: 100%;
+        height: auto;
+        border: 13px solid #ffffff21;
+        border-radius: 50%; }
+
+.page2 .about-me {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: justify; }
+  .page2 .about-me p {
+    color: #ffffffcf;
+    font-size: 17px;
+    line-height: 35px; }
+  .page2 .about-me .btn-success {
+    background-color: #3350604f;
+    border: 1px solid #5170818f;
+    padding: 10px 20px; }
+    .page2 .about-me .btn-success:hover {
+      background-color: #182c37;
+      border: 1px solid #14242c; }
+
+.page3 .list-portfolio {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0; }
+  .page3 .list-portfolio li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+    .page3 .list-portfolio li:hover .titles h4 a {
+      color: #fff; }
+    .page3 .list-portfolio li img {
+      width: 100%;
+      height: auto; }
+    .page3 .list-portfolio li .titles {
+      text-align: center;
+      display: table; }
+      .page3 .list-portfolio li .titles h4 {
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        display: table-cell;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: calc(18px + 6 * ((100vw - 20px) / 380)); }
+        .page3 .list-portfolio li .titles h4 a {
+          color: #ffffff4f; }
+
+@media (max-width: 1200px) {
+  .page2 .about-me .btn-success {
+    margin-bottom: 3rem; }
+
+  .page1 .intro-text {
+    height: 100vh; }
+
+  .about-me .pt-5 {
+    padding-top: 0 !important; }
+
+  .section {
+    height: 100%; }
+
+  .page3 .list-portfolio {
+    display: unset; }
+
+  .page1 .intro-text .img-profile img {
+    width: 59%;
+    border: 8px solid #ffffff21;
+    border-radius: 50%; }
+
+  .container {
+    width: 100%;
+    max-width: 100% !important; }
+
+  .col-md-6,
+  .col-md-4 {
+    width: 100%; }
+
+  .d-flex {
+    display: flow-root !important; }
+
+  .mt-5 {
+    margin-top: 2rem !important; }
+
+  .page3 .list-portfolio li {
+    display: grid;
+    margin-bottom: 0;
+    margin-top: 5rem; } }
+
+/*# sourceMappingURL=style.css.map */
