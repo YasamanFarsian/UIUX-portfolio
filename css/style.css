@@ -30,7 +30,7 @@ li {
 #sec2,
 #sec3 {
   background-color: #1e3745; }
-.page2{height:80vh;}
+#sec2{height:80vh !important;}
 
 .page1 {
   background-color: #1e3745; }
